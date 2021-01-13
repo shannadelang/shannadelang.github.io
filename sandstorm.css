@@ -1,0 +1,281 @@
+body {margin:0;}
+
+/*MENU BAR*/
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  font-family: "Arial";
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1% 1.5%;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.navbar a:hover {
+  background: white;
+  color: #f1d6bc;
+}
+
+/*HEADER AT THE TOP*/
+
+.header {
+  display: flex;
+  text-align: center;
+  background-image: url("img/desertBackground_flare.png");
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  color: black;
+    
+  font-family: "Libre Caslon Text";
+}
+
+.header-coverPanel {
+	width: 40%;
+	overflow: hidden;
+	background: white;
+	position: left;
+	color: black;
+    display: flex;
+}
+
+.header-textPanel {
+	width: 60%;
+	margin-top: 144px;
+	margin-bottom: 132px;
+	position: right;
+}
+
+.image-text { /*title on image*/
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	background-image: url("img/desertBackground1.png");
+	background-size: cover;
+	background-position: center;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-transform: translate(-50%, 0px);
+	font-size: 4em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.image-subtext { /*sub-title on image*/
+    align-self: flex-end;
+    -webkit-transform: translate(-50%, 1em);
+}
+
+
+/*START OF MAIN CONTENT*/
+
+/* screenshots of all projects*/
+div.banner{
+    height: 100%;
+    background-size: cover;
+	background-position: center;
+}
+div.crud { /*Crud (opdracht 8+ 10 sort)*/
+    background-image: url("img/crudPHP.png");
+}
+
+div.shoppingcart { /*shopping cart (opdracht 16)*/ 
+    background-image: url("img/shoppingcart.png");
+}
+
+div.yahtzee { /*yahtzee*/
+    background-image: url("img/yahtzee.png");
+}
+
+div.passports { /*passports (put on server?)*/
+    background-image: url("img/passports.png");
+}
+
+div.blog { /*blog*/
+    background-image: url("img/blogpost.png");
+}
+
+div.decorator { /*decorator*/
+    background-image: url("img/photoframe.png");
+}
+
+div.carFacade { /*Gauge car facade*/
+    background-image: url("img/carfacade.png");
+}
+
+div.collatzRest { /*Collatz RESTful API*/
+    background-image: url("img/collatzrest.png");
+}
+
+div.rpsls { /*rock paper scissors lizard spock*/
+    background-image: url("img/rpsls.png");
+}
+
+div.issTracker { /*issTracker*/
+    background-image: url("img/iss-tracker.png");
+}
+
+/* Layout of main page */
+.main {
+    background: white;
+    font-family: "Arial";
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+h1{ /*Titel of sections*/
+    color:#34666f;
+    padding-top: 4%;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    text-align: center;
+}
+
+h2{ /*Titels of projects*/
+    text-transform: capitalize;
+    text-transform: uppercase;
+}
+
+h3{ /*subtitel of projects*/
+    color: #e9be96;
+}
+
+P{
+    margin: 0;
+}
+
+div.highlightedProjects{
+    display: flex;
+    padding-left: 5%;
+    padding-right:5%;
+}
+
+
+div.highlightProjectCol {
+    float: left;
+    width: 33.33%;
+    margin: 8px;
+    height: 28em;
+    margin-bottom: 70px;
+}
+
+div.highlight {
+   border-radius: 8px;
+  box-shadow: 1px 5px 5px #aaaaaa;
+}
+
+div.highlight a {
+   cursor: pointer;
+    text-decoration:none !important;
+    color: black;
+}
+
+div.highlight .overlay{
+  height: 100%;
+  width: 100%;
+border-radius: 8px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f1d6bc;
+}
+
+div.highlight:hover .overlay{
+    opacity: 0.6;
+}
+
+.short .text {
+  text-align: center;
+    display: center;
+    left: 50%;
+    transform: translate(0, 7em);
+}
+
+
+.long .text {
+    display: center;
+    text-align: center;
+    left: 50%;
+    transform: translate(0, 12em);
+}
+
+div.short{
+    margin-bottom: 16px;
+    height: 16em;
+}
+
+div.allProjects{
+}
+
+div.project{
+    display: flex;
+    height: 24em;
+    padding-bottom: 2em;
+}
+
+div.projectImgCol{
+    width: 50%;
+    position: left;
+    display: flex;
+	overflow: hidden;
+}
+
+div.projectTextCol{
+    width: 50%;
+    background: #fbf2ea;
+	overflow: hidden;
+    padding: 5%;
+}
+
+.projectTextCol div{
+    padding: 6px;
+}
+
+/*Button styles*/
+.button-view{
+   border-radius: 4px;
+   background: linear-gradient(to right, #93bdbf, #34666f) !important;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 1em;
+   padding: 0.8em;
+   width: 200px;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button-view span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+
+.button-view span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+
+.button-view:hover span {
+    padding-right: 25px;
+}
+
+.button-view:hover span:after{
+    opacity: 1;
+   right: 0;
+}
