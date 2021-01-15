@@ -31,13 +31,16 @@ body {margin:0;}
 .header {
   display: flex;
   text-align: center;
+  opacity: 90%;
   background-image: url("img/desertBackground_flare.png");
-  background-position: top; /* Center the image */
+  background-position: top; 
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  height: 90%;
   color: black;
     
   font-family: "Libre Caslon Text";
+  background-attachment: fixed;
 }
 
 .header-coverPanel {
@@ -51,8 +54,8 @@ body {margin:0;}
 
 .header-textPanel {
 	width: 60%;
-	margin-top: 144px;
-	margin-bottom: 132px;
+	margin-top: 11%;
+	margin-bottom: 13%;
 	position: right;
 }
 
